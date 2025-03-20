@@ -1,103 +1,98 @@
-import Image from "next/image";
 
+import { Poppins,Gabarito } from "next/font/google";
+import { CiBank, CiCreditCard1, CiFolderOn, CiHome, CiSettings, CiViewList, CiViewTable, CiViewTimeline, CiWallet } from "react-icons/ci";
+import { CiMail } from "react-icons/ci";
+import { CiShoppingCart } from "react-icons/ci";
+import { FiPieChart } from "react-icons/fi";
+import Graph1 from "@/components/ui/graph1"
+import { FaDotCircle } from "react-icons/fa";
+const kolkerBrush = Gabarito({
+  weight: "400",
+  subsets: ["latin"],
+});
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="h-screen w-screen bg-[#edf5fa] flex justify-center items-center text-white">
+      <div className="w-[90vw] h-[85vh] rounded-3xl bg-[#dfedf0] flex">
+        <div className={`w-[6vw] bg-neutral-800 rounded-3xl m-4 ${kolkerBrush.className} flex flex-col items-center`}>
+        <h1 className=" mt-5 text-2xl font-bold tracking-wide">DyC</h1>
+           <CiHome className="text-3xl mt-12 "/>
+           <CiMail className="text-3xl mt-5 "/>
+           <CiShoppingCart className="text-3xl mt-5"/>
+           <CiBank className="text-3xl mt-5"/>
+           <CiViewList className="text-3xl mt-5"/>
+           <CiFolderOn className="text-3xl mt-5"/>
+           <CiViewTimeline className="text-3xl mt-5"/>
+           <CiSettings className="text-3xl mt-12"/>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        <div className="w-[84vw] flex flex-col">
+          <div className="h-[10vh]">
+            <h2 className={` pt-4 pl-2 text-3xl text-black ${kolkerBrush.className}`}>Good Morning, Akhil!</h2>
+          </div>
+          <div className="flex">
+          <div className="h-[75vh] flex flex-col">
+              <div className={`h-[30vh] flex gap-4 ${kolkerBrush.className}`}>
+                <div className="h-[27vh] w-[12vw] pt-3 flex rounded-3xl bg-[#d1e1e8] p-4 flex-col ">
+                    <CiWallet className="text-4xl text-black" />
+                    <h3 className="text-black font-bold text-3xl mt-3">₹50000</h3>
+                    <h4 className=" text-black font-thin text-lg mt-3 font-mono">Your Bank Balance</h4>
+                </div>
+                <div className="h-[27vh] w-[12vw] pt-3 flex rounded-3xl bg-[#d1e1e8] p-4 flex-col ">
+                    <FiPieChart className="text-4xl text-black" />
+                    <h3 className="text-black font-bold text-3xl mt-3">12</h3>
+                    <h4 className=" text-black font-thin text-lg mt-3 font-mono">Uncategorised Transaction</h4>
+                </div>
+                <div className="h-[27vh] w-[12vw] pt-3 flex rounded-3xl bg-[#d1e1e8] p-4 flex-col ">
+                    <CiWallet className="text-4xl text-black" />
+                    <h3 className="text-black font-bold text-3xl mt-3">₹50000</h3>
+                    <h4 className=" text-black font-thin text-lg mt-3 font-mono">Your Bank Balance</h4>
+                </div>
+                <div className="h-[27vh] w-[12vw] pt-3 flex rounded-3xl bg-[#d1e1e8] p-4 flex-col ">
+                    <CiCreditCard1 className="text-4xl text-black" />
+                    <h3 className="text-black font-bold text-3xl mt-3">₹10000</h3>
+                    <h4 className=" text-black font-thin text-lg mt-3 font-mono">Todays Spendings</h4>
+                </div>
+                
+              </div>
+              <div className={`h-[43vh] flex gap-4 pt-4 ${kolkerBrush.className}`}>
+                <div className="w-[15vw]  flex flex-col justify-between">
+                    <div className=" bg-[#d1e1e8] h-[19vh] rounded-3xl flex flex-col p-4">
+                        <h3 className="text-black text-2xl">New clients</h3>
+                        <h2 className="text-black text-4xl mt-4">43</h2>
+                    </div>
+                    <div className=" bg-[#d1e1e8] h-[19vh] rounded-3xl flex flex-col p-4">
+                        <h3 className="text-black text-2xl">Pending order</h3>
+                        <h2 className="text-black text-4xl mt-4">3</h2>
+                    </div>
+
+                </div>
+                <div className="w-[35vw]  bg-[#d1e1e8] rounded-3xl overflow-hidden">
+                    <Graph1/>
+                </div>
+              </div>
+          </div>
+          <div className="flex  w-[27vw] rounded-3xl h-[73vh] ml-6 flex-col justify-between pb-3">
+            <div className="h-[40vh] bg-neutral-950 rounded-3xl text-white p-4 gap-3">
+                <h3 className="text-3xl font-bold pb-5">Formation Status</h3>
+                <h4 className="text-2xl font-thin pb-5">In Progress</h4>
+              <div className="relative pt-6 w-64 h-5 bg-neutral-400 rounded-full">
+             <div className="absolute left-0 top-0 h-full bg-[#d1e1e8] rounded-full transition-all duration-500"
+          style={{ width: "80%" }}
+        ></div>
+      </div>
+      <div className="flex items-center w-full h-[27vh] justify-center">
+      <button className="bg-[#d1e1e8] text-black p-4 rounded-2xl w-1xl">Check</button>
+      </div>
+            </div>
+            <div className="bg-black h-[15vh] w-full rounded-3xl p-4 flex items-center">
+            <FaDotCircle className="text-green-500 text-2xl"/>
+            <h3 className="text-lg text-white">Business meeting tommorow at 9.30 am</h3>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
