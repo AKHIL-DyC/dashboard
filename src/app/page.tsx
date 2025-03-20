@@ -1,6 +1,6 @@
 
-import { Poppins,Gabarito } from "next/font/google";
-import { CiBank, CiCreditCard1, CiFolderOn, CiHome, CiSettings, CiViewList, CiViewTable, CiViewTimeline, CiWallet } from "react-icons/ci";
+import { Gabarito } from "next/font/google";
+import { CiBank, CiCreditCard1, CiFolderOn, CiHome, CiSettings, CiViewList,CiViewTimeline, CiWallet } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 import { FiPieChart } from "react-icons/fi";
@@ -16,14 +16,14 @@ export default function Home() {
       <div className="w-[90vw] h-[85vh] rounded-3xl bg-[#dfedf0] flex">
         <div className={`w-[6vw] bg-neutral-800 rounded-3xl m-4 ${kolkerBrush.className} flex flex-col items-center`}>
         <h1 className=" mt-5 text-2xl font-bold tracking-wide">DyC</h1>
-           <CiHome className="text-3xl mt-12 "/>
-           <CiMail className="text-3xl mt-5 "/>
-           <CiShoppingCart className="text-3xl mt-5"/>
-           <CiBank className="text-3xl mt-5"/>
-           <CiViewList className="text-3xl mt-5"/>
-           <CiFolderOn className="text-3xl mt-5"/>
-           <CiViewTimeline className="text-3xl mt-5"/>
-           <CiSettings className="text-3xl mt-12"/>
+           <CiHome className="text-3xl mt-12 hover:text-blue-500 "/>
+           <CiMail className="text-3xl mt-5 hover:text-blue-500  "/>
+           <CiShoppingCart className="text-3xl mt-5  hover:text-blue-500 "/>
+           <CiBank className="text-3xl mt-5  hover:text-blue-500 "/>
+           <CiViewList className="text-3xl mt-5  hover:text-blue-500 "/>
+           <CiFolderOn className="text-3xl mt-5  hover:text-blue-500 "/>
+           <CiViewTimeline className="text-3xl mt-5  hover:text-blue-500 "/>
+           <CiSettings className="text-3xl mt-12  hover:text-blue-500 "/>
         </div>
 
         <div className="w-[84vw] flex flex-col">
